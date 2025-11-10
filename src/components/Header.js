@@ -61,7 +61,7 @@ export default function Header() {
         </div>
         <div className="flex items-center justify-center gap-2">
             <Link
-                href="https://github.com/valasme/moonui"
+                href="https://github.com/valasme/moon-ui"
                 className={`${ubuntu.className} hidden md:flex text-white font-normal text-center items-center justify-center flex-row bg-transparent px-3 py-1.5 hover:bg-neutral-900 duration-100 ease-in-out transition-all cursor-pointer rounded-lg gap-2`}
                 target="_blank"
                 prefetch
