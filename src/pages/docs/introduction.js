@@ -56,7 +56,6 @@ export default function MoonDocsIntroduction() {
         return () => document.removeEventListener("keydown", handleEscape);
     }, [isSmallScreen, showSidebar]);
 
-    // Body overflow
     useEffect(() => {
         if (showSidebar && isSmallScreen) document.body.style.overflow = "hidden"; else document.body.style.overflow = "";
         return () => {
