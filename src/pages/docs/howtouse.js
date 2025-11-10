@@ -27,7 +27,6 @@ export default function MoonDocsHowToUse() {
         handleResize();
     }, []);
 
-    // Resize listener
     useEffect(() => {
         const handleResize = () => {
             const small = window.innerWidth < 1024;
@@ -38,7 +37,6 @@ export default function MoonDocsHowToUse() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // Close on outside click
     useEffect(() => {
         if (!isSmallScreen || !showSidebar) return;
         const handleOutsideClick = (e) => {
@@ -50,7 +48,6 @@ export default function MoonDocsHowToUse() {
         return () => document.removeEventListener("click", handleOutsideClick);
     }, [isSmallScreen, showSidebar]);
 
-    // Close on Escape
     useEffect(() => {
         if (!isSmallScreen || !showSidebar) return;
         const handleEscape = (e) => {
@@ -60,7 +57,6 @@ export default function MoonDocsHowToUse() {
         return () => document.removeEventListener("keydown", handleEscape);
     }, [isSmallScreen, showSidebar]);
 
-    // Body overflow
     useEffect(() => {
         if (showSidebar && isSmallScreen) document.body.style.overflow = "hidden"; else document.body.style.overflow = "";
         return () => {
