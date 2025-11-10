@@ -98,8 +98,6 @@ export default function IndexPage() {
                     fit your preferences, works seamlessly with any major framework that supports HTML & Tailwind.
                 </p>
             </section>
-
-            {/* TRY IT OUT SECTION */}
             <section
                 className="flex flex-col border border-neutral-900 w-full h-125 p-12 rounded-4xl bg-[url(/hero-image1.png)] bg-center bg-no-repeat bg-cover mb-12">
                 <h1
