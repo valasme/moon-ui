@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from "@/components/Header";
 import {Ubuntu} from "next/font/google";
-import Link from "next/link";
 import Image from "next/image";
 
 const ubuntu = Ubuntu({
