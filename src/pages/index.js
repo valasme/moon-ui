@@ -132,8 +132,7 @@ export default function IndexPage() {
                         Copy
                     </button>
                 </div>
-
-                {/* Code Snippet Box */}
+                
                 <div
                     className="bg-neutral-950 border-x border-b border-neutral-800 rounded-b-lg w-full max-w-3xl mx-auto h-full">
         <pre className="text-neutral-300 text-sm overflow-x-auto p-6 w-full h-full">
