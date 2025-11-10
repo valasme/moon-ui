@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Ubuntu } from "next/font/google";
+import {Ubuntu} from "next/font/google";
 
 const ubuntu = Ubuntu({
     weight: ['300', '400', '500', '700'],
@@ -15,9 +15,8 @@ const ubuntu = Ubuntu({
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    return (
-        <header className="bg-neutral-950 z-50 top-0 fixed w-full h-16 border-b border-b-neutral-900 left-0 right-0 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-30 xl:px-40 2xl:px-90">
-            {/* Left Section: Logo + Nav */}
+    return (<header
+            className="bg-neutral-950 z-50 top-0 fixed w-full h-16 border-b border-b-neutral-900 left-0 right-0 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-30 xl:px-40 2xl:px-90">
             <div className="flex items-center justify-center gap-6">
                 <Link
                     href="/"
@@ -65,7 +64,7 @@ export default function Header() {
             {/* Right Section */}
             <div className="flex items-center justify-center gap-2">
                 <Link
-                    href="https://github.com/valasme/moon-ui"
+                    href="https://github.com/valasme/moonui"
                     className={`${ubuntu.className} hidden md:flex text-white font-normal text-center items-center justify-center flex-row bg-transparent px-3 py-1.5 hover:bg-neutral-900 duration-100 ease-in-out transition-all cursor-pointer rounded-lg gap-2`}
                     target="_blank"
                     prefetch
@@ -100,8 +99,8 @@ export default function Header() {
             </div>
 
             {/* Fullscreen Mobile Menu */}
-            {menuOpen && (
-                <div className="fixed top-0 left-0 w-full h-full bg-neutral-950 z-40 flex flex-col items-center justify-center gap-6 px-6 sm:px-12">
+            {menuOpen && (<div
+                    className="fixed top-0 left-0 w-full h-full bg-neutral-950 z-40 flex flex-col items-center justify-center gap-6 px-6 sm:px-12">
                     <button
                         onClick={() => setMenuOpen(false)}
                         className="absolute top-5 right-5 text-white text-2xl font-bold"
@@ -148,8 +147,6 @@ export default function Header() {
                         />
                         Github
                     </Link>
-                </div>
-            )}
-        </header>
-    );
+                </div>)}
+        </header>);
 }
