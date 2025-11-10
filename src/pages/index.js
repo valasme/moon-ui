@@ -106,8 +106,6 @@ export default function IndexPage() {
                     className={`${ubuntu.className} font-bold text-center text-2xl justify-center flex text-white mb-12`}>
                     TRY IT OUT.
                 </h1>
-
-                {/* Floating Bar (outside the snippet) */}
                 <div
                     className="flex justify-between items-center bg-neutral-900 border border-neutral-800 rounded-t-lg px-3 py-4 w-full max-w-3xl mx-auto overflow-y-hidden overflow-x-scroll">
                     <span className={`${ubuntu.className} text-neutral-400 text-sm`}>HTML Snippet</span>
@@ -132,7 +130,7 @@ export default function IndexPage() {
                         Copy
                     </button>
                 </div>
-                
+
                 <div
                     className="bg-neutral-950 border-x border-b border-neutral-800 rounded-b-lg w-full max-w-3xl mx-auto h-full">
         <pre className="text-neutral-300 text-sm overflow-x-auto p-6 w-full h-full">
