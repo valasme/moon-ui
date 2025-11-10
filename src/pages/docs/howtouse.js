@@ -18,7 +18,6 @@ export default function MoonDocsHowToUse() {
     const sidebarRef = useRef(null);
     const buttonRef = useRef(null);
 
-    // Initial sync before paint
     useLayoutEffect(() => {
         const handleResize = () => {
             const small = window.innerWidth < 1024;
