@@ -1,4 +1,3 @@
-// Sidebar.js
 import Link from "next/link";
 import {Ubuntu} from "next/font/google";
 import {forwardRef} from "react";
