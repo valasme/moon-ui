@@ -28,8 +28,6 @@ export default function MoonDocsIntroduction() {
         };
         handleResize();
     }, []);
-
-    // Resize listener
     useEffect(() => {
         const handleResize = () => {
             const small = window.innerWidth < 1024;
@@ -40,7 +38,6 @@ export default function MoonDocsIntroduction() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // Close on outside click
     useEffect(() => {
         if (!isSmallScreen || !showSidebar) return;
         const handleOutsideClick = (e) => {
@@ -50,7 +47,6 @@ export default function MoonDocsIntroduction() {
         return () => document.removeEventListener("click", handleOutsideClick);
     }, [isSmallScreen, showSidebar]);
 
-    // Close on Escape
     useEffect(() => {
         if (!isSmallScreen || !showSidebar) return;
         const handleEscape = (e) => {
