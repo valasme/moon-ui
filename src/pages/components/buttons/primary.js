@@ -1,4 +1,4 @@
-// secondary.js
+// primary.js
 import Head from "next/head";
 import Header from "@/components/Header";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const ubuntu = Ubuntu({
   display: "auto",
 });
 
-export default function MoonComponentsSecondaryButton() {
+export default function MoonComponentsPrimaryButton() {
   const [isSmallScreen, setIsSmallScreen] = useState(true);
   const [showSidebar, setShowSidebar] = useState(false);
   const sidebarRef = useRef(null);
@@ -87,11 +87,11 @@ export default function MoonComponentsSecondaryButton() {
   return (
     <div className="flex flex-col w-full h-full bg-neutral-950 scroll-auto overflow-auto m-0 p-0">
       <Head>
-        <title>MoonUI - Secondary Button</title>
-        <meta name="title" content="MoonUI - Secondary Button" />
+        <title>MoonUI - Primary Button</title>
+        <meta name="title" content="MoonUI - Primary Button" />
         <meta
           name="description"
-          content="MoonUI secondary button, used across all pages."
+          content="MoonUI primary button, used across all pages."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
@@ -99,34 +99,34 @@ export default function MoonComponentsSecondaryButton() {
         <meta name="author" content="Valasellis Dimitris" />
         <link
           rel="canonical"
-          href="https://moon-ui-app.vercel.app/components/buttons/secondary"
+          href="https://moon-ui-app.vercel.app/components/buttons/primary"
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.png" />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://moon-ui-app.vercel.app/components/buttons/secondary"
+          content="https://moon-ui-app.vercel.app/components/buttons/primary"
         />
-        <meta property="og:title" content="Moon UI - Secondary Button" />
+        <meta property="og:title" content="Moon UI - Primary Button" />
         <meta
           property="og:description"
-          content="MoonUI secondary button, used across all pages."
+          content="MoonUI primary button, used across all pages."
         />
         <meta property="og:image" content="/og-image.png" />
         <meta property="og:site_name" content="MoonUI" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Moon UI - Secondary Button" />
+        <meta name="twitter:title" content="Moon UI - Primary Button" />
         <meta
           name="twitter:description"
-          content="MoonUI secondary button, used across all pages."
+          content="MoonUI primary button, used across all pages."
         />
         <meta name="twitter:image" content="/og-image.png" />
         <meta name="theme-color" content="#0a0a0a" />
         <meta
           name="keywords"
-          content="MoonUI secondary button, UI button component, Tailwind CSS button, web development button, HTML button, component library"
+          content="MoonUI primary button, UI button component, Tailwind CSS button, web development button, HTML button, component library"
         />
         <meta name="language" content="en-US" />
         <meta name="geo.region" content="US" />
@@ -176,21 +176,21 @@ export default function MoonComponentsSecondaryButton() {
             <h1
               className={`${ubuntu.className} font-bold text-left text-3xl sm:text-4xl text-white mb-2`}
             >
-              Secondary Button
+              Primary Button
             </h1>
 
             <p
               className={`${ubuntu.className} font-thin text-start flex flex-wrap items-start justify-start text-sm text-neutral-300 mb-12`}
             >
-              The secondary button is used across all pages, let&apos;s say for
-              example, a learn more button etc.
+              The primary button is used across all pages, let&apos;s say for
+              example, a login button etc.
             </p>
 
             <section className="flex flex-col w-full mb-12 items-start">
               <div className="flex flex-col w-full max-w-3xl">
                 <div className="flex items-center justify-center w-full py-16 bg-neutral-950 border border-neutral-800 rounded-t-lg">
-                  <button className="flex flex-row items-center justify-center cursor-pointer bg-neutral-100 hover:bg-neutral-200 duration-100 ease-in-out text-black transition-all px-3 py-2 rounded-lg flex-wrap">
-                    Secondary
+                  <button className="flex flex-row items-center justify-center cursor-pointer bg-neutral-950 hover:bg-neutral-900 duration-100 ease-in-out text-white transition-all px-3 py-2 rounded-lg flex-wrap">
+                    Primary
                   </button>
                 </div>
 
@@ -203,7 +203,7 @@ export default function MoonComponentsSecondaryButton() {
                   <button
                     id="copyButton"
                     onClick={() => {
-                      const code = `<button class="flex flex-row items-center justify-center cursor-pointer bg-neutral-100 hover:bg-neutral-100 duration-100 ease-in-out text-black transition-all px-3 py-2 rounded-lg flex-wrap">Secondary</button>`;
+                      const code = `<button class="flex flex-row items-center justify-center cursor-pointer bg-neutral-950 hover:bg-neutral-900 duration-100 ease-in-out text-white transition-all px-3 py-2 rounded-lg flex-wrap">Primary</button>`;
                       navigator.clipboard.writeText(code);
                       const btn = document.getElementById("copyButton");
                       if (btn) {
@@ -223,8 +223,8 @@ export default function MoonComponentsSecondaryButton() {
 
                 <div className="bg-neutral-950 border-x border-b border-neutral-800 rounded-b-lg w-full h-full">
                   <pre className="text-neutral-300 text-sm overflow-x-auto p-6 w-full h-full">
-                    {`<button class="flex flex-row items-center justify-center cursor-pointer bg-neutral-100 hover:bg-neutral-100 duration-100 ease-in-out text-black transition-all px-3 py-2 rounded-lg flex-wrap">
-    Secondary
+                    {`<button class="flex flex-row items-center justify-center cursor-pointer bg-neutral-950 hover:bg-neutral-900 duration-100 ease-in-out text-white transition-all px-3 py-2 rounded-lg flex-wrap">
+    Primary
 </button>`}
                   </pre>
                 </div>
