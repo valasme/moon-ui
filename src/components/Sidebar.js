@@ -79,6 +79,12 @@ const Sidebar = forwardRef(function Sidebar(
         >
           Danger Button
         </Link>
+          <Link
+              href={"/components/buttons/success"}
+              className={`${ubuntu.className} font-normal text-start flex flex-wrap text-white justify-start items-start hover:underline underline-offset-4 px-3 py-2`}
+          >
+              Success Button
+          </Link>
       </div>
     </aside>
   );
