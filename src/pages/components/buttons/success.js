@@ -2,24 +2,17 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Link from "next/link";
 import Sidebar from "@/components/Sidebar";
-import { Ubuntu } from "next/font/google";
-import { useState, useEffect, useRef, useLayoutEffect } from "react";
+import {Ubuntu} from "next/font/google";
+import {useState, useEffect, useRef, useLayoutEffect} from "react";
 
 const ubuntu = Ubuntu({
     weight: ["300", "400", "500", "700"],
     style: ["normal", "italic"],
-    subsets: [
-        "latin-ext",
-        "latin",
-        "greek-ext",
-        "greek",
-        "cyrillic-ext",
-        "cyrillic",
-    ],
+    subsets: ["latin-ext", "latin", "greek-ext", "greek", "cyrillic-ext", "cyrillic",],
     display: "auto",
 });
 
-export default function MoonComponentsPrimaryButton() {
+export default function MoonComponentsSuccessButton() {
     const [isSmallScreen, setIsSmallScreen] = useState(true);
     const [showSidebar, setShowSidebar] = useState(false);
     const sidebarRef = useRef(null);
@@ -47,13 +40,7 @@ export default function MoonComponentsPrimaryButton() {
     useEffect(() => {
         if (!isSmallScreen || !showSidebar) return;
         const handleOutsideClick = (e) => {
-            if (
-                sidebarRef.current &&
-                !sidebarRef.current.contains(e.target) &&
-                buttonRef.current &&
-                !buttonRef.current.contains(e.target)
-            )
-                setShowSidebar(false);
+            if (sidebarRef.current && !sidebarRef.current.contains(e.target) && buttonRef.current && !buttonRef.current.contains(e.target)) setShowSidebar(false);
         };
         document.addEventListener("click", handleOutsideClick);
         return () => document.removeEventListener("click", handleOutsideClick);
@@ -69,8 +56,7 @@ export default function MoonComponentsPrimaryButton() {
     }, [isSmallScreen, showSidebar]);
 
     useEffect(() => {
-        if (showSidebar && isSmallScreen) document.body.style.overflow = "hidden";
-        else document.body.style.overflow = "";
+        if (showSidebar && isSmallScreen) document.body.style.overflow = "hidden"; else document.body.style.overflow = "";
         return () => {
             document.body.style.overflow = "";
         };
@@ -78,56 +64,55 @@ export default function MoonComponentsPrimaryButton() {
 
     const toggleSidebar = () => setShowSidebar((p) => !p);
 
-    return (
-        <div className="flex flex-col w-full h-full bg-neutral-950 scroll-auto overflow-auto m-0 p-0">
+    return (<div className="flex flex-col w-full h-full bg-neutral-950 scroll-auto overflow-auto m-0 p-0">
             <Head>
                 <title>MoonUI - Success Button</title>
-                <meta name="title" content="MoonUI - Success Button" />
+                <meta name="title" content="MoonUI - Success Button"/>
                 <meta
                     name="description"
                     content="MoonUI success button, used across some pages."
                 />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta charSet="UTF-8" />
-                <meta name="robots" content="index, follow" />
-                <meta name="author" content="Valasellis Dimitris" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta charSet="UTF-8"/>
+                <meta name="robots" content="index, follow"/>
+                <meta name="author" content="Valasellis Dimitris"/>
                 <link
                     rel="canonical"
                     href="https://moon-ui-app.vercel.app/components/buttons/success"
                 />
-                <link rel="manifest" href="/manifest.json" />
-                <link rel="icon" href="/favicon.png" />
-                <meta property="og:type" content="website" />
+                <link rel="manifest" href="/manifest.json"/>
+                <link rel="icon" href="/favicon.png"/>
+                <meta property="og:type" content="website"/>
                 <meta
                     property="og:url"
                     content="https://moon-ui-app.vercel.app/components/buttons/success"
                 />
-                <meta property="og:title" content="Moon UI - Success Button" />
+                <meta property="og:title" content="Moon UI - Success Button"/>
                 <meta
                     property="og:description"
                     content="MoonUI success button, used across some pages."
                 />
-                <meta property="og:image" content="/og-image.png" />
-                <meta property="og:site_name" content="MoonUI" />
-                <meta property="og:locale" content="en_US" />
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Moon UI - Success Button" />
+                <meta property="og:image" content="/og-image.png"/>
+                <meta property="og:site_name" content="MoonUI"/>
+                <meta property="og:locale" content="en_US"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content="Moon UI - Success Button"/>
                 <meta
                     name="twitter:description"
                     content="MoonUI success button, used across some pages."
                 />
-                <meta name="twitter:image" content="/og-image.png" />
-                <meta name="theme-color" content="#0a0a0a" />
+                <meta name="twitter:image" content="/og-image.png"/>
+                <meta name="theme-color" content="#0a0a0a"/>
                 <meta
                     name="keywords"
                     content="MoonUI success button, UI button component, Tailwind CSS button, web development button, HTML button, component library"
                 />
-                <meta name="language" content="en-US" />
-                <meta name="geo.region" content="US" />
-                <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+                <meta name="language" content="en-US"/>
+                <meta name="geo.region" content="US"/>
+                <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
             </Head>
 
-            <Header />
+            <Header/>
 
             <main className="flex flex-row m-0 p-0 min-h-screen relative pr-0 pl-0">
                 <Sidebar
@@ -136,16 +121,12 @@ export default function MoonComponentsPrimaryButton() {
                     isSmallScreen={isSmallScreen}
                     toggleSidebar={toggleSidebar}
                 />
-                {isSmallScreen && showSidebar && (
-                    <div
+                {isSmallScreen && showSidebar && (<div
                         className="fixed inset-0 bg-black/50 z-40"
                         onClick={() => setShowSidebar(false)}
-                    />
-                )}
+                    />)}
                 <aside
-                    className={`flex-1 bg-neutral-950 overflow-y-auto p-6 pt-10 ${
-                        isSmallScreen ? "ml-0" : "ml-64"
-                    } lg:px-16 lg:py-12`}
+                    className={`flex-1 bg-neutral-950 overflow-y-auto p-6 pt-10 ${isSmallScreen ? "ml-0" : "ml-64"} lg:px-16 lg:py-12`}
                 >
                     <div className="flex flex-col items-start w-full max-w-4xl">
                         <Link
@@ -182,13 +163,16 @@ export default function MoonComponentsPrimaryButton() {
 
                         <section className="flex flex-col w-full mb-12 items-start">
                             <div className="flex flex-col w-full max-w-3xl">
-                                <div className="flex items-center justify-center w-full py-16 bg-neutral-950 border border-neutral-800 rounded-t-lg">
-                                    <button className="flex flex-row items-center justify-center cursor-pointer bg-green-400 hover:bg-green-400/90 duration-100 ease-in-out text-white transition-all px-3 py-2 rounded-lg flex-wrap">
+                                <div
+                                    className="flex items-center justify-center w-full py-16 bg-neutral-950 border border-neutral-800 rounded-t-lg">
+                                    <button
+                                        className="flex flex-row items-center justify-center cursor-pointer bg-green-400 hover:bg-green-400/90 duration-100 ease-in-out text-white transition-all px-3 py-2 rounded-lg flex-wrap">
                                         Success
                                     </button>
                                 </div>
 
-                                <div className="flex justify-between items-center bg-neutral-900 border-x border-t border-neutral-800 px-4 py-2">
+                                <div
+                                    className="flex justify-between items-center bg-neutral-900 border-x border-t border-neutral-800 px-4 py-2">
                   <span
                       className={`${ubuntu.className} text-neutral-400 text-sm`}
                   >
@@ -215,7 +199,8 @@ export default function MoonComponentsPrimaryButton() {
                                     </button>
                                 </div>
 
-                                <div className="bg-neutral-950 border-x border-b border-neutral-800 rounded-b-lg w-full h-full">
+                                <div
+                                    className="bg-neutral-950 border-x border-b border-neutral-800 rounded-b-lg w-full h-full">
                   <pre className="text-neutral-300 text-sm overflow-x-auto p-6 w-full h-full">
                     {`<button class="flex flex-row items-center justify-center cursor-pointer bg-green-400 hover:bg-green-400/90 duration-100 ease-in-out text-white transition-all px-3 py-2 rounded-lg flex-wrap">
     Success
@@ -227,14 +212,12 @@ export default function MoonComponentsPrimaryButton() {
                     </div>
                 </aside>
 
-                {isSmallScreen && (
-                    <button
+                {isSmallScreen && (<button
                         ref={buttonRef}
                         onClick={toggleSidebar}
                         className="fixed bottom-4 right-4 bg-neutral-800 text-white p-3 rounded-full z-50"
                     >
-                        {showSidebar ? (
-                            <svg
+                        {showSidebar ? (<svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
@@ -245,9 +228,7 @@ export default function MoonComponentsPrimaryButton() {
                                     d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
                                     clipRule="evenodd"
                                 />
-                            </svg>
-                        ) : (
-                            <svg
+                            </svg>) : (<svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
@@ -258,11 +239,8 @@ export default function MoonComponentsPrimaryButton() {
                                     d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
                                     clipRule="evenodd"
                                 />
-                            </svg>
-                        )}
-                    </button>
-                )}
+                            </svg>)}
+                    </button>)}
             </main>
-        </div>
-    );
+        </div>);
 }
