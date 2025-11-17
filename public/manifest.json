@@ -1,0 +1,133 @@
+{
+  "name": "MoonUI",
+  "short_name": "MoonUI",
+  "description": "MoonUI is a modern and minimal UI library.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0a0a0a",
+  "background_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Docs - Introduction",
+      "short_name": "Introduction",
+      "url": "/docs/introduction"
+    },
+    {
+      "name": "Docs - How to Use",
+      "short_name": "How to Use",
+      "url": "/docs/howtouse"
+    },
+    {
+      "name": "Button - Primary",
+      "short_name": "Primary Button",
+      "url": "/components/buttons/primary"
+    },
+    {
+      "name": "Button - Secondary",
+      "short_name": "Secondary Button",
+      "url": "/components/buttons/secondary"
+    },
+    {
+      "name": "Button - Ghost",
+      "short_name": "Ghost Button",
+      "url": "/components/buttons/ghost"
+    },
+    {
+      "name": "Button - Outline",
+      "short_name": "Outline Button",
+      "url": "/components/buttons/outline"
+    },
+    {
+      "name": "Button - Icon",
+      "short_name": "Icon Button",
+      "url": "/components/buttons/icon"
+    },
+    {
+      "name": "Button - Danger",
+      "short_name": "Danger Button",
+      "url": "/components/buttons/danger"
+    },
+    {
+      "name": "Button - Icon with Button",
+      "short_name": "Icon+Button",
+      "url": "/components/buttons/iconwithbutton"
+    },
+    {
+      "name": "Button - Link",
+      "short_name": "Link Button",
+      "url": "/components/buttons/link"
+    },
+    {
+      "name": "Button - Skeleton",
+      "short_name": "Skeleton Button",
+      "url": "/components/buttons/skeleton"
+    },
+    {
+      "name": "Button - Success",
+      "short_name": "Success Button",
+      "url": "/components/buttons/success"
+    },
+    {
+      "name": "Input - Date",
+      "short_name": "Date Input",
+      "url": "/components/inputs/date"
+    },
+    {
+      "name": "Input - Email",
+      "short_name": "Email Input",
+      "url": "/components/inputs/email"
+    },
+    {
+      "name": "Input - Number",
+      "short_name": "Number Input",
+      "url": "/components/inputs/number"
+    },
+    {
+      "name": "Input - Password",
+      "short_name": "Password Input",
+      "url": "/components/inputs/password"
+    },
+    {
+      "name": "Input - Search",
+      "short_name": "Search Input",
+      "url": "/components/inputs/search"
+    },
+    {
+      "name": "Input - Telephone",
+      "short_name": "Telephone Input",
+      "url": "/components/inputs/telephone"
+    },
+    {
+      "name": "Input - Text",
+      "short_name": "Text Input",
+      "url": "/components/inputs/text"
+    },
+    {
+      "name": "Input - Textarea",
+      "short_name": "Textarea",
+      "url": "/components/inputs/textarea"
+    },
+    {
+      "name": "Input - URL",
+      "short_name": "URL Input",
+      "url": "/components/inputs/url"
+    }
+  ]
+}
