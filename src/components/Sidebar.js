@@ -33,6 +33,7 @@ const componentSections = [
       { label: "Primary Button", href: "/components/buttons/primary" },
       { label: "Secondary Button", href: "/components/buttons/secondary" },
       { label: "Ghost Button", href: "/components/buttons/ghost" },
+      { label: "Subtle Button", href: "/components/buttons/subtle" },
       { label: "Outline Button", href: "/components/buttons/outline" },
       { label: "Icon Button", href: "/components/buttons/icon" },
       { label: "Danger Button", href: "/components/buttons/danger" },
