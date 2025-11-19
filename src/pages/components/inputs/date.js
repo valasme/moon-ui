@@ -19,7 +19,7 @@ const ubuntu = Ubuntu({
   display: "auto",
 });
 
-export default function MoonComponentsPasswordInput() {
+export default function MoonComponentsDateInput() {
   const [isSmallScreen, setIsSmallScreen] = useState(true);
   const [showSidebar, setShowSidebar] = useState(false);
   const sidebarRef = useRef(null);
