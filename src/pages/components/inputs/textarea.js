@@ -192,7 +192,7 @@ export default function MoonComponentsTextareaInput() {
                     rows={4}
                     placeholder={"Write something..."}
                     className={
-                      "flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md"
+                      "flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md text-white placeholder-white"
                     }
                   />
                 </div>
@@ -206,7 +206,7 @@ export default function MoonComponentsTextareaInput() {
                   <button
                     id="copyButton"
                     onClick={() => {
-                      const code = `<textarea rows="4" placeholder="Write something..." class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md"></textarea>`;
+                      const code = `<textarea rows="4" placeholder="Write something..." class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md text-white placeholder-white"></textarea>`;
                       navigator.clipboard.writeText(code);
                       const btn = document.getElementById("copyButton");
                       if (btn) {
@@ -226,7 +226,7 @@ export default function MoonComponentsTextareaInput() {
 
                 <div className="bg-neutral-950 border-x border-b border-neutral-800 rounded-b-lg w-full h-full">
                   <pre className="text-neutral-300 text-sm overflow-x-auto p-6 w-full h-full">
-                    {`<textarea rows="4" placeholder="Write something..." class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md"></textarea>`}
+                    {`<textarea rows="4" placeholder="Write something..." class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md text-white placeholder-white"></textarea>`}
                   </pre>
                 </div>
               </div>
