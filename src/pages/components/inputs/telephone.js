@@ -192,7 +192,7 @@ export default function MoonComponentsTelephoneInput() {
                     type={"tel"}
                     placeholder={"+123 456 7890"}
                     className={
-                      "flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md"
+                      "flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md text-white placeholder-white"
                     }
                   />
                 </div>
@@ -206,7 +206,7 @@ export default function MoonComponentsTelephoneInput() {
                   <button
                     id="copyButton"
                     onClick={() => {
-                      const code = `<input type="tel" placeholder="+123 456 7890" class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md" />`;
+                      const code = `<input type="tel" placeholder="+123 456 7890" class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md text-white placeholder-white" />`;
                       navigator.clipboard.writeText(code);
                       const btn = document.getElementById("copyButton");
                       if (btn) {
@@ -226,7 +226,7 @@ export default function MoonComponentsTelephoneInput() {
 
                 <div className="bg-neutral-950 border-x border-b border-neutral-800 rounded-b-lg w-full h-full">
                   <pre className="text-neutral-300 text-sm overflow-x-auto p-6 w-full h-full">
-                    {`<input type="tel" placeholder="+123 456 7890" class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md" />`}
+                    {`<input type="tel" placeholder="+123 456 7890" class="flex w-fit h-fit px-4 py-2 border-none focus:ring-0 ring-0 outline-0 focus:outline-0 flex-row justify-start items-start text-start flex-wrap bg-neutral-900 hover:bg-neutral-900/80 overflow-auto duration-100 ease-in-out font-sans rounded-md text-white placeholder-white" />`}
                   </pre>
                 </div>
               </div>
