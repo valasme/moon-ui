@@ -183,7 +183,8 @@ export default function MoonComponentsPrimaryButton() {
               className={`${ubuntu.className} font-thin text-start flex flex-wrap items-start justify-start text-sm text-neutral-300 mb-12`}
             >
               The primary button is used across all pages, let&apos;s say for
-              example, a login button etc.
+              example, a login button etc. It does have a background color. Its
+              not an actual ghost button, it just doesnt show it.
             </p>
 
             <section className="flex flex-col w-full mb-12 items-start">
